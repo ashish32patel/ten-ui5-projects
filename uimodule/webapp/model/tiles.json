@@ -1,0 +1,14 @@
+[
+    {
+        "title": "First project",
+        "route": "first"
+    },
+    {
+        "title": "Second project",
+        "route": "second"
+    },
+    {
+        "title": "Third project",
+        "route": "third"
+    }        
+]

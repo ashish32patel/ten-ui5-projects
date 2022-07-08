@@ -1,0 +1,18 @@
+<mvc:View controllerName="com.akp.tenUI5Projects.controller.Tiles"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m">
+    <Page id="Tiles" showHeader="false">
+        <content>            
+                <!-- <l:HorizontalLayout class="sapUiContentPadding" content="{tileModel>/}"> -->
+                <FlexBox id="idFlexBox" height="100px" alignItems="Start" justifyContent="Start" items="{tileModel>/}">
+                    <items>
+                        <GenericTile header="{tileModel>title}" subheader="Subtitle" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" press="press">
+
+                        </GenericTile>
+                    </items>
+                </FlexBox>
+                <!-- </l:HorizontalLayout> -->      
+        </content>
+    </Page>
+</mvc:View>

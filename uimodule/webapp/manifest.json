@@ -70,13 +70,14 @@
         "clearControlAggregation": false
       },
       "routes": [
+
         {
-          "name": "RouteMainView",
-          "pattern": ":?query:",
+          "name": "Tiles",
+          "pattern": "",
           "target": [
-            "TargetMainView"
+            "TilesView"
           ]
-        }
+        }        
       ],
       "targets": {
         "TargetMainView": {
@@ -85,7 +86,14 @@
           "clearControlAggregation": false,
           "viewId": "MainView",
           "viewName": "MainView"
-        }
+        },
+        "TilesView": {
+          "viewType": "XML",
+          "transition": "slide",          
+          "clearControlAggregation": false,
+          "viewId": "Tiles",
+          "viewName": "Tiles"
+        }       
       }
     },
     "rootView": {

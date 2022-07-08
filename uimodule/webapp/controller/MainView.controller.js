@@ -7,7 +7,9 @@ sap.ui.define(
         "use strict";
 
         return Controller.extend("com.akp.tenUI5Projects.controller.MainView", {
-            onInit: function () {},
+            onInit: function () {
+                
+            },
         });
     }
 );
