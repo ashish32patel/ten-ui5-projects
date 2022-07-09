@@ -7,7 +7,7 @@
                 <!-- <l:HorizontalLayout class="sapUiContentPadding" content="{tileModel>/}"> -->
                 <FlexBox id="idFlexBox" height="100px" alignItems="Start" justifyContent="Start" items="{tileModel>/}">
                     <items>
-                        <GenericTile header="{tileModel>title}" subheader="Subtitle" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" press="press">
+                        <GenericTile header="{tileModel>title}" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" press="press">
 
                         </GenericTile>
                     </items>
