@@ -1,0 +1,43 @@
+<mvc:View controllerName="com.akp.tenUI5Projects.controller.countdown.Countdown"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns:grid="sap.ui.layout.cssgrid"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="countdownPageId" showHeader="false">
+        <grid:CSSGrid id="grid1" gridTemplateColumns="1fr" gridGap="1rem">
+
+            <Image src="https://images2.minutemediacdn.com/image/upload/c_fill,w_912,h_516,f_auto,q_auto,g_auto/shape/cover/sport/fbl-wc-2022-qat-5d6ebdfb4cd5800da8000001.jpg"/>
+            <grid:CSSGrid id="grid2" gridTemplateColumns="1fr 1fr 1fr 1fr" gridGap="0">
+
+
+                <GenericTile header="Days" valueColor="Error" class="sapUiTinyMarginTop tileLayout" press="press">
+                    <TileContent >
+                        <NumericContent withMargin="false" value="{timerModel>/days}" />
+                    </TileContent>
+                </GenericTile>
+
+                <GenericTile header="Hours" valueColor="Critical" class="sapUiTinyMarginTop tileLayout" press="press">
+                    <TileContent >
+                        <NumericContent withMargin="false" value="{timerModel>/hours}" />
+                    </TileContent>
+                </GenericTile>
+
+                <GenericTile header="Minutes" valueColor="Good" class="sapUiTinyMarginTop tileLayout" press="press">
+                    <TileContent >
+                        <NumericContent withMargin="false" value="{timerModel>/minutes}" />
+                    </TileContent>
+                </GenericTile>
+
+                <GenericTile header="Seconds" valueColor="Neutral" class="sapUiTinyMarginTop tileLayout" press="press">
+                    <TileContent >
+                        <NumericContent withMargin="false" value="{timerModel>/seconds}" />
+                    </TileContent>
+                </GenericTile>
+
+
+            </grid:CSSGrid>
+
+        </grid:CSSGrid>
+    </Page>
+</mvc:View>

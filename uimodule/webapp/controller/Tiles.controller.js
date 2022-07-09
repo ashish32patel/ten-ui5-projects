@@ -11,6 +11,10 @@ sap.ui.define(
                 let oTiles = new JSONModel("../model/tiles.json");
                 this.getView().setModel(oTiles, "tileModel");
             },
+
+            press: function (oRoute) {
+                this.getOwnerComponent().getRouter().navTo(oRoute);
+            }
         });
     }
 );
