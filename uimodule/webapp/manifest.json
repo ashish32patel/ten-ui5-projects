@@ -84,7 +84,28 @@
           "target": [
             "CountdownView"
           ]
-        }        
+        },
+        {
+          "name": "second",
+          "pattern": "second",
+          "target": [
+            "CovidView"
+          ]
+        },
+        {
+          "name": "second-list",
+          "pattern": "second-list",
+          "target": [
+            "CovidListView"
+          ]
+        },
+        {
+          "name": "second-pie",
+          "pattern": "second-pie",
+          "target": [
+            "CovidPieView"
+          ]
+        }                      
       ],
       "targets": {
         "TargetMainView": {
@@ -107,7 +128,28 @@
           "clearControlAggregation": false,
           "viewId": "countdown.Countdown",
           "viewName": "countdown.Countdown"
-        }
+        },
+        "CovidView" : {
+          "viewType": "XML",
+          "transition": "slide",          
+          "clearControlAggregation": false,
+          "viewId": "covid.Covid",
+          "viewName": "covid.Covid"
+        },
+        "CovidListView": {
+          "viewType": "XML",
+          "transition": "slide",          
+          "clearControlAggregation": false,
+          "viewId": "covid.List",
+          "viewName": "covid.List"
+        },
+        "CovidPieView": {
+          "viewType": "XML",
+          "transition": "slide",          
+          "clearControlAggregation": false,
+          "viewId": "covid.Pie",
+          "viewName": "covid.Pie"
+        }        
       }
     },
     "rootView": {
