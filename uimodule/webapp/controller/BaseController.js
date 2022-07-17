@@ -1,3 +1,5 @@
+// const { default: containsOrEquals } = require("sap/ui/dom/containsOrEquals");
+
 sap.ui.define(
     ["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History", "sap/ui/core/UIComponent", "com/akp/tenUI5Projects/model/formatter"],
     /**
@@ -37,9 +39,9 @@ sap.ui.define(
              * @public
              * @returns {sap.ui.model.resource.ResourceModel} the resourceModel of the component
              */
-            getResourceBundle: function () {
-                return this.getOwnerComponent().getModel("i18n").getResourceBundle();
-            },
+            // getResourceBundle: function () {
+            //     return this.getOwnerComponent().getModel("i18n").getResourceBundle();
+            // },
 
             /**
              * Method for navigation to specific view
@@ -48,23 +50,25 @@ sap.ui.define(
              * @param {Object.<string, string>} pmParameters? Parameters for navigation
              * @param {boolean} pbReplace? Defines if the hash should be replaced (no browser history entry) or set (browser history entry)
              */
-            navTo: function (psTarget, pmParameters, pbReplace) {
-                this.getRouter().navTo(psTarget, pmParameters, pbReplace);
-            },
+            // navTo: function (psTarget, pmParameters, pbReplace) {
+            //     this.getRouter().navTo(psTarget, pmParameters, pbReplace);
+            // },
 
             getRouter: function () {
                 return UIComponent.getRouterFor(this);
             },
 
-            onNavBack: function () {
-                const sPreviousHash = History.getInstance().getPreviousHash();
+            // onNavBack: function () {
+            //     const sPreviousHash = History.getInstance().getPreviousHash();
 
-                if (sPreviousHash !== undefined) {
-                    window.history.back();
-                } else {
-                    this.getRouter().navTo("appHome", {}, true /* no history*/);
-                }
-            },
+            //     if (sPreviousHash !== undefined) {
+            //         window.history.back();
+            //     } else {
+            //         this.getRouter().navTo("appHome", {}, true /* no history*/);
+            //     }
+            // },
+
+           
         });
     }
 );

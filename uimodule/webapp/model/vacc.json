@@ -1,0 +1,58 @@
+[
+    {
+      "vacc": "Typhoid",
+      "company": "Novartis",
+      "date": "January 7 2022",
+      "type": "Injectible",
+      "ctype":"Type01"
+    },
+    {
+      "vacc": "PCV",
+      "company": "AZ",
+      "date": "February 25 2022",
+      "type": "Injectible",
+      "ctype":"Type01"
+    },
+    {
+      "vacc": "Flu",
+      "company": "GSK",
+      "date": "March 17 2022",
+      "type": "Injectible",
+      "ctype":"Type01"
+    },
+    {
+      "vacc": "Vit D",
+      "company": "Moderna",
+      "date": "May 3 2022",
+      "type": "Oral",
+      "ctype":"Type02"
+    },
+    {
+      "vacc": "vacc1",
+      "company": "Sandoz",
+      "date": "July 7 2022",
+      "type": "Oral",
+      "ctype":"Type02"
+    },
+    {
+      "vacc": "vacc2",
+      "company": "Mck",
+      "date": "July 17 2022",
+      "type": "Oral",
+      "ctype":"Type03"
+    },
+    {
+      "vacc": "Covid 19",
+      "company": "GSK",
+      "date": "July 31 2022",
+      "type": "Oral",
+      "ctype":"Type02"
+    },
+    {
+      "vacc": "Typhoid",
+      "company": "Mck",
+      "date": "August 13 2022",
+      "type": "Injectible",
+      "ctype":"Type01"
+    }
+  ]

@@ -105,6 +105,13 @@
           "target": [
             "CovidPieView"
           ]
+        },
+        {
+          "name": "third",
+          "pattern": "third",
+          "target": [
+            "VaccinationView"
+          ]
         }                      
       ],
       "targets": {
@@ -149,7 +156,14 @@
           "clearControlAggregation": false,
           "viewId": "covid.Pie",
           "viewName": "covid.Pie"
-        }        
+        },
+        "VaccinationView": {
+          "viewType": "XML",
+          "transition": "slide",          
+          "clearControlAggregation": false,
+          "viewId": "vacc.Vacc",
+          "viewName": "vacc.Vacc"
+        }       
       }
     },
     "rootView": {
