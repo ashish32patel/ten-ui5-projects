@@ -10,5 +10,11 @@
     {
         "title": "Vaccination Tracker",
         "route": "third"
-    }        
+    },
+    {
+        "title": "Fourth App",
+        "route": "EXT-fourth",
+        "url": "http://www.google.com"
+
+    }               
 ]

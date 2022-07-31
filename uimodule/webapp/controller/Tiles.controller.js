@@ -13,6 +13,11 @@ sap.ui.define(
             },
 
             press: function (oRoute) {
+                if(oRoute.substring(0,3) == "EXT") {
+                    // @ts-ignore
+                    let selItem = this.getView().getModel("tileModel").getData().find( (x) => x.route == oRoute ); 
+                    sap.m.URLHelper.redirect(selItem.url,true);
+                }
                 this.getOwnerComponent().getRouter().navTo(oRoute);
             }
         });
