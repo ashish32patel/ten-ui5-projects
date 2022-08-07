@@ -1,0 +1,57 @@
+<mvc:View displayBlock="true" controllerName="com.akp.pollutionTracker.controller.Master" height="100%"
+	  xmlns="sap.m"
+	  xmlns:f="sap.f"
+	  xmlns:mvc="sap.ui.core.mvc">
+	<f:DynamicPage id="dynamicPageId"
+				   toggleHeaderOnTitleClick="false">
+		<!-- DynamicPage Title -->
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title text="Country wise pollutionTracker"/>
+				</f:heading>
+			</f:DynamicPageTitle>
+		</f:title>
+
+		<!-- DynamicPage Content -->
+		<f:content>
+			<Table
+				id="productsTable"
+		
+				
+				inset="false"
+				items="{countries>/}"
+				class="sapFDynamicPageAlignContent"
+				width="auto">
+
+				<columns>
+					<Column width="12em">
+						<Text text="Country" />
+					</Column>
+					<Column	hAlign="End">
+						<Text text="AQI" />
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation" press="onCountryPress">
+						<cells>
+							<ObjectIdentifier title="{countries>country}" />
+							<ObjectNumber
+									number="{countries>AQI}"
+									unit="ppm" />
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</f:content>
+
+		<!-- DynamicPage Footer -->
+		<!-- <f:footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button type="Accept" text="Accept"/>
+				<Button type="Reject" text="Reject"/>
+			</OverflowToolbar>
+		</f:footer> -->
+	</f:DynamicPage>
+</mvc:View>

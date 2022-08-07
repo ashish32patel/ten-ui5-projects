@@ -1,0 +1,23 @@
+{
+  "generator-template-ui5-project": {
+    "projectname": "pollutionTracker",
+    "namespaceUI5": "com.akp",
+    "enableFPM": false,
+    "platform": "Static webserver",
+    "viewtype": "XML",
+    "ui5libs": "Local resources (SAPUI5)",
+    "newdir": true,
+    "codeassist": true,
+    "namespaceURI": "com/akp",
+    "opa5pos": [
+      "Main"
+    ],
+    "opa5Journeys": [
+      "Main"
+    ],
+    "uimodules": [
+      "uimodule"
+    ],
+    "setupCompleted": true
+  }
+}

@@ -16,7 +16,7 @@ sap.ui.define(
                 if(oRoute.substring(0,3) == "EXT") {
                     // @ts-ignore
                     let selItem = this.getView().getModel("tileModel").getData().find( (x) => x.route == oRoute ); 
-                    sap.m.URLHelper.redirect(selItem.url,true);
+                    sap.m.URLHelper.redirect(selItem.url);
                 }
                 this.getOwnerComponent().getRouter().navTo(oRoute);
             }

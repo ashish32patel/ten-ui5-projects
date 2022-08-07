@@ -1,0 +1,16 @@
+<mvc:View controllerName="com.akp.pollutionTracker.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.f" height="100%">
+    <!-- <Page id="page" title="{i18n>title}">
+        <content />
+    </Page> -->
+
+<!-- <mvc:XMLView id = "masterviewid1" viewName="com.akp.pollutionTracker.view.Master"/> -->
+	<FlexibleColumnLayout
+		autoFocus="false"
+		id="fcl"
+		stateChange="onStateChanged"
+		restoreFocusOnBackNavigation="true"
+		layout="{/layout}"
+		backgroundDesign="Translucent"/>    
+</mvc:View>

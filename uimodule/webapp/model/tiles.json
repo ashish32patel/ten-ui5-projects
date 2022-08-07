@@ -12,9 +12,9 @@
         "route": "third"
     },
     {
-        "title": "Fourth App",
+        "title": "Pollution Tracker",
         "route": "EXT-fourth",
-        "url": "http://www.google.com"
+        "url": "http://localhost:8081/index.html"
 
     }               
 ]
